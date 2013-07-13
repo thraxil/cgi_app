@@ -1,0 +1,4 @@
+to install, just run, as root: 
+
+python setup.py install
+

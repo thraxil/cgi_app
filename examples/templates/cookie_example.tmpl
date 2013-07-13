@@ -1,0 +1,21 @@
+<html>
+  <head><title>cookie example</title>
+  </head>
+  <body>
+  <h1>cookie example</h1>
+  <p>this script should have set two cookies. check your browser's cookie
+  file to see for yourself.</p>
+  <p>the code for this runmode:</p>
+  <pre>
+  def cookie_example(self):
+      import Cookie
+      c = Cookie.SimpleCookie()
+      c["fig"] = "newton"
+      c2 = Cookie.SimpleCookie()
+      c2["foo"] = "bar"
+      c2["foo"]["path"] = "/"
+      self.set_cookies([c,c2])
+      return self.template("cookie_example.tmpl",{})
+  </pre>
+  </body>
+</html>

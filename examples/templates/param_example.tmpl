@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>param example</title>
+  </head>
+  <body>
+  <h1>param example</h1>
+  <p>your name is <b><tmpl_var name="name" escape="html"></b>.</p>
+  <p>the code for this run-mode is:</p>
+  <pre>
+  def param_example(self):
+      name = self.param('name')
+      return self.template("param_example.tmpl",{'name' : name})
+  </pre>
+  </body>
+</html>

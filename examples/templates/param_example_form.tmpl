@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>cgi_app: param example</title>
+  </head>
+  <body>
+
+  <form action="example.cgi" method="post">
+  <fieldset><legend>param example</legend>
+  <input type="hidden" name="rm" value="param_example" />
+
+  <p>enter your name: <input type="text" name="name" /></p>
+  <input type="submit" />
+  </fieldset>
+  </form>
+  <p>this parameter handling example is really two run-modes.
+  param_example_form, is the current run-mode and handles displaying this
+  form. it's code just looks like:</p>
+  <pre>
+  def param_example_form(self):
+      return self.template("param_example_form.tmpl",{})
+  </pre>
+  </body>
+</html>
