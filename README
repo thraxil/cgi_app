@@ -1,8 +1,0 @@
-cgi_app -- Framework for reusable web applications
-
-python version of the CGI::Application perl framework.
-
-by Anders Pearson <anders@columbia.edu>
-
-see the INSTALL document for installation instructions. look in the
-examples directory for sample code. 
